@@ -104,6 +104,17 @@ class Example extends React.Component {
 
         <div className="motto-update">
           {/* Your problem #1 motto displaying and updating widget goes here */}
+         <p>My name is "{this.state.name}"</p>
+
+          <p>Motto: {this.state.inputValue}</p>
+
+            <input
+              type="text"
+              placeholder="Enter motto"
+              value={this.state.inputValue}
+              onChange={this.handleChangeBound}
+            />
+ 
         </div>
 
         <p>
